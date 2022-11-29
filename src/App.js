@@ -31,7 +31,7 @@ const App = () => {
 	return (
 		<>
 			<Section title={"Please leave feedback"}>
-				<FeedbackOptions options={["good", "bad", "neutral"]} onLeaveFeedback={handleFeedback} />
+				<FeedbackOptions options={["good", "neutral", "bad"]} onLeaveFeedback={handleFeedback} />
 			</Section>
 			<Section title={"Statistics"}>
 				{total ? (
