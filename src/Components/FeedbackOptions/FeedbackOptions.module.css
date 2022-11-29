@@ -1,0 +1,31 @@
+.option-list{
+  display: flex;
+  gap: 10px
+}
+
+
+.option-btn{
+  font-size: 15px;
+  font-weight: 700;
+  padding: 10px;
+  text-transform: uppercase;
+  min-width: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.option-item:nth-child(1) .option-btn {
+  background-color: green;
+}
+
+.option-item:nth-child(2) .option-btn {
+  background-color: grey;
+}
+
+.option-item:nth-child(3) .option-btn {
+  background-color: red;
+}
+
+.option-item .option-btn:hover{
+  background-color: white;
+}
