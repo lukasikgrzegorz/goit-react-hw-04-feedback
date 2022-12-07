@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Statisctics from "./Components/Statistics/Statistics";
+import Statistics from "./Components/Statistics/Statistics";
 import FeedbackOptions from "./Components/FeedbackOptions/FeedbackOptions";
 import Section from "./Components/Section/Section";
 import Notification from "./Components/Notification/Notification";
@@ -30,12 +30,12 @@ const App = () => {
 
 	return (
 		<>
-			<Section title={"Please leave feedback"}>
+			<Section title="Please leave feedback">
 				<FeedbackOptions options={["good", "neutral", "bad"]} onLeaveFeedback={handleFeedback} />
 			</Section>
-			<Section title={"Statistics"}>
+			<Section title="Statistics">
 				{total ? (
-					<Statisctics
+					<Statistics
 						good={good}
 						neutral={neutral}
 						bad={bad}
@@ -43,7 +43,7 @@ const App = () => {
 						positivePercentage={positivePercentage}
 					/>
 				) : (
-					<Notification message={"There is no feedback"} />
+					<Notification message="There is no feedback" />
 				)}
 			</Section>
 		</>
